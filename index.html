@@ -54,9 +54,12 @@
     model-viewer {
       width: 100%;
       height: 100%;
-      /* Теплый градиент на фоне 3D сцены */
       background: radial-gradient(circle at center, #ff8597 0%, #f2d293 100%);
       --poster-color: transparent;
+    }
+    model-viewer::part(default-ar-button) {
+      bottom: 120px; 
+      right: 20px;
     }
     /* Стилизация кнопки AR, которую добавляет model-viewer */
     model-viewer::part(default-ar-button) {
